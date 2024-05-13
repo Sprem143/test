@@ -8,7 +8,7 @@ const [password,setPassword]= useState('')
 
  const login=async()=>{
   console.log(email,password)
-  let result= await fetch("http://localhost:8000/login",{
+  let result= await fetch("https://test-backend-pqcp.onrender.com/login",{
     method:"POST",
     headers:{'Content-Type':'application/json'},
     body:JSON.stringify({email,password})
